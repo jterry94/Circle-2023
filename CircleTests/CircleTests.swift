@@ -6,6 +6,7 @@
 //
 
 import XCTest
+//import CircleParameters
 
 final class CircleTests: XCTestCase {
 
@@ -18,6 +19,19 @@ final class CircleTests: XCTestCase {
     }
 
     func testExample() throws {
+        
+        var circleParameters = CircleParameters()
+        
+        circleParameters.radiusOfACircle = "1.0"
+        circleParameters.calculate()
+        
+        var correctArea = Double.pi
+        var correctPerimeter = 2.0*Double.pi
+        
+        XCTAssertEqual(correctArea, circleParameters.areaOfCircleDouble, accuracy: 1e-14)
+        
+        XCTAssertEqual(correctPerimeter, circleParameters.perimeterOfCircleDouble, accuracy: 1e-14)
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.

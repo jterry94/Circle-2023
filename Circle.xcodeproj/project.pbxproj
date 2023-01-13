@@ -14,6 +14,9 @@
 		A5BFBFC72971F4D6005B77F7 /* CircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFBFC62971F4D6005B77F7 /* CircleTests.swift */; };
 		A5BFBFD12971F4D6005B77F7 /* CircleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFBFD02971F4D6005B77F7 /* CircleUITests.swift */; };
 		A5BFBFD32971F4D6005B77F7 /* CircleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFBFD22971F4D6005B77F7 /* CircleUITestsLaunchTests.swift */; };
+		A5BFBFE02971FAF7005B77F7 /* CircleParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFBFDF2971FAF7005B77F7 /* CircleParameters.swift */; };
+		A5BFBFE12971FAF7005B77F7 /* CircleParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFBFDF2971FAF7005B77F7 /* CircleParameters.swift */; };
+		A5BFBFE22971FAF7005B77F7 /* CircleParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFBFDF2971FAF7005B77F7 /* CircleParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,7 @@
 		A5BFBFCC2971F4D6005B77F7 /* CircleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BFBFD02971F4D6005B77F7 /* CircleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleUITests.swift; sourceTree = "<group>"; };
 		A5BFBFD22971F4D6005B77F7 /* CircleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A5BFBFDF2971FAF7005B77F7 /* CircleParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleParameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			children = (
 				A5BFBFB42971F4D5005B77F7 /* CircleApp.swift */,
 				A5BFBFB62971F4D5005B77F7 /* ContentView.swift */,
+				A5BFBFDF2971FAF7005B77F7 /* CircleParameters.swift */,
 				A5BFBFB82971F4D6005B77F7 /* Assets.xcassets */,
 				A5BFBFBA2971F4D6005B77F7 /* Circle.entitlements */,
 				A5BFBFBB2971F4D6005B77F7 /* Preview Content */,
@@ -261,6 +266,7 @@
 			files = (
 				A5BFBFB72971F4D5005B77F7 /* ContentView.swift in Sources */,
 				A5BFBFB52971F4D5005B77F7 /* CircleApp.swift in Sources */,
+				A5BFBFE02971FAF7005B77F7 /* CircleParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5BFBFC72971F4D6005B77F7 /* CircleTests.swift in Sources */,
+				A5BFBFE12971FAF7005B77F7 /* CircleParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +285,7 @@
 			files = (
 				A5BFBFD32971F4D6005B77F7 /* CircleUITestsLaunchTests.swift in Sources */,
 				A5BFBFD12971F4D6005B77F7 /* CircleUITests.swift in Sources */,
+				A5BFBFE22971FAF7005B77F7 /* CircleParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,16 +6,49 @@
 //
 
 import SwiftUI
+//import CircleParameters
 
 struct ContentView: View {
+    @State private var radiusOfACircle: String = ""
+    @State private var areaOfACircle: String = ""
+    @State private var perimeterOfACircle: String = ""
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Enter the radius of the circle:")
+            TextField("Radius", text: $radiusOfACircle)
+                
+
+            Button(action: calculateAreaAndPerimeterOfACircle) {
+                Text("Calculate")
+            }
+
+            Text("Area:")
+            Text(areaOfACircle)
+
+            Text("Perimeter:")
+            Text(perimeterOfACircle)
         }
-        .padding()
+    }
+
+    func calculateAreaAndPerimeterOfACircle() {
+//        let r = Double(radiusOfACircle) ?? 0
+//        let a = Double.pi * r * r
+//        let p = 2 * Double.pi * r
+        
+        let circleParameters = CircleParameters()
+        circleParameters.radiusOfACircle = radiusOfACircle
+        
+        circleParameters.calculate()
+        
+        print (circleParameters.areaOfACircle)
+        
+        
+        areaOfACircle = circleParameters.areaOfACircle
+        perimeterOfACircle = circleParameters.perimeter
+        
+        
+        
     }
 }
 
@@ -24,3 +57,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
