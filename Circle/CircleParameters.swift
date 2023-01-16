@@ -17,26 +17,26 @@ class CircleParameters {
     var perimeterOfCircleDouble = 0.0
     
     
-    /// calcuatle Te area and perimeter of a circle
+    /// calcuatle the area and perimeter of a circle
     ///
-    ///    _oo
+    ///     _oo
    //      /     1
    //      |     - dx
    ///    _/  0        x
-
-
+    ///
+    ///
     func calculate() {
-        let r = Double(radiusOfACircle) ?? 0
-        let a = Double.pi * r * r
-        let p = 2 * Double.pi * r
+        let radiusOfTheCircle = Double(radiusOfACircle) ?? 0
+        let areaOfTheCircle = Double.pi * radiusOfTheCircle * radiusOfTheCircle
+        let perimeterOfTheCircle = 2 * Double.pi * radiusOfTheCircle
         
-        print(r)
+        print(radiusOfTheCircle)
         
-        areaOfACircle = String(format: "%.2f", a)
-        perimeter = String(format: "%.2f", p)
+        areaOfACircle = String(format: "%.2f", areaOfTheCircle)
+        perimeter = String(format: "%.2f", perimeterOfTheCircle)
         
-        areaOfCircleDouble = a
-        perimeterOfCircleDouble = p
+        areaOfCircleDouble = areaOfTheCircle
+        perimeterOfCircleDouble = perimeterOfTheCircle
         
         print(areaOfACircle)
     }

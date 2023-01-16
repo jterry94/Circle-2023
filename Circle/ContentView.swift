@@ -40,8 +40,7 @@ struct ContentView: View {
         circleParameters.radiusOfACircle = radiusOfACircle
         
         circleParameters.calculate()
-        
-        print (circleParameters.areaOfACircle)
+
         
         
         areaOfACircle = circleParameters.areaOfACircle

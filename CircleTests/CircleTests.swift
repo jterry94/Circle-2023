@@ -20,13 +20,13 @@ final class CircleTests: XCTestCase {
 
     func testExample() throws {
         
-        var circleParameters = CircleParameters()
+        let circleParameters = CircleParameters()
         
         circleParameters.radiusOfACircle = "1.0"
         circleParameters.calculate()
         
-        var correctArea = Double.pi
-        var correctPerimeter = 2.0*Double.pi
+        let correctArea = Double.pi
+        let correctPerimeter = 2.0*Double.pi
         
         XCTAssertEqual(correctArea, circleParameters.areaOfCircleDouble, accuracy: 1e-14)
         
